@@ -1,4 +1,7 @@
 Projectgym::Application.routes.draw do
+  
+  resource :workouts 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
