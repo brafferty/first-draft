@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projectgym</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title><%= @title || "Project Gym" %></title>
+
   <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag "bootstrap.min", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
 </head>
 <body>
 
 <%= yield %>
+
+<%= javascript_include_tag "jquery-1.7.2.min" %>
+<%= javascript_include_tag "underscore-min" %>
+<%= javascript_include_tag "backbone-min" %>
+<%= javascript_include_tag "boostrap.min" %>
+<%= javascript_include_tag "application" %>
 
 </body>
 </html>

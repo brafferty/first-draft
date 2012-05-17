@@ -8,13 +8,13 @@ class CreateMovements < ActiveRecord::Migration
       
       t.integer :weight
       t.string :weight_unit       # lbs, kg, pood
-      t.integer :reps
       t.integer :distance
       t.string :distance_unit     # m, in, ft, yd, mi, km
       
       t.integer :minutes
       t.integer :seconds
       
+      t.integer :reps
       t.integer :cals
       
       t.timestamps
